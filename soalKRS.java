@@ -78,12 +78,12 @@ public class soalKRS {
     public static void analisisDataKRS() {
         System.out.println("\n--- Analisis Data KRS ---");
         int jmlMhsKrg20 = 0;
-        boolean[] mahasiswaDihitung = new boolean[jmlData];
+        boolean[] htgMhs = new boolean[jmlData];
 
         for (int i = 0; i < jmlData; i++) {
             String nim = data[i][1];
 
-            if (!mahasiswaDihitung[i]) {
+            if (!htgMhs[i]) {
                 int totalSKS = 0;
 
                 for (int j = 0; j < jmlData; j++) {
@@ -98,7 +98,7 @@ public class soalKRS {
 
                 for (int x = 0; x < jmlData; x++) {
                     if (data[x][1].equals(nim)) {
-                        mahasiswaDihitung[x] = true;
+                        htgMhs[x] = true;
                     }
                 }
             }
