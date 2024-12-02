@@ -25,9 +25,7 @@ public class soalKRS {
             if (sks < 1 || sks > 3) {
                 System.out.println("Jumlah SKS tidak valid! SKS harus antara 1 dan 3.");
                 continue;
-            }
-
-            if (totalSKS + sks > 24) {
+            } else if (totalSKS + sks > 24) {
                 System.out.println("Total SKS melebihi 24! Data tidak bisa ditambahkan.");
                 break;
             }
