@@ -5,6 +5,7 @@ public class soalKRS {
     static int jmlData = 0;
     static Scanner sc = new Scanner(System.in);
 
+    // menambah data di KRS
     public static void tambahDataKRS() {
         System.out.println("\n--- Tambah Data KRS ---");
         System.out.print("Nama Mahasiswa: ");
@@ -49,6 +50,7 @@ public class soalKRS {
         System.out.println("Total SKS yang diambil: " + totalSKS + "\n");
     }
 
+    // menampilkan data di KRS
     public static void tampilkanDaftarKRS() {
         System.out.println("\n--- Tampilkan Daftar KRS Mahasiswa ---");
         System.out.print("Masukkan NIM mahasiswa: ");
@@ -72,6 +74,7 @@ public class soalKRS {
         }
     }
 
+    // menganalisis data di KRS
     public static void analisisDataKRS() {
         System.out.println("\n--- Analisis Data KRS ---");
         int jmlMhsKrg20 = 0;
@@ -105,6 +108,7 @@ public class soalKRS {
     public static void main(String[] args) {
         int pilihan;
 
+        // list menu
         do {
             System.out.println("=== Sistem Pemantauan KRS Mahasiswa ===");
             System.out.println("1. Tambah Data KRS");
